@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
         let username = this.loginForm.controls.username.value;
         let password = this.loginForm.controls.password.value;
         this.loginForm.controls.username.reset;
-        this.loginForm.controls.username.reset;
+        this.loginForm.controls.password.reset;
         this.authenticationService.signInUser(username, password);
         username = '0';
         password = '0';
